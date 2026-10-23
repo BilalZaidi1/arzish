@@ -1,0 +1,104 @@
+/* Web edition additions: account menu, notification bell, banners, paywalls, plan cards, sign-in
+   and back office. Uses the app's design tokens so both themes follow automatically. */
+
+.w-full { width: 100%; justify-content: center; }
+.w-pop { position: relative; display: inline-flex; align-items: center; }
+.w-dot {
+  position: absolute; top: 2px; right: 0; min-width: 16px; height: 16px; padding: 0 4px; border-radius: 999px;
+  background: var(--critical); color: #fff; font-size: 10.5px; font-weight: 700; line-height: 16px; text-align: center;
+  pointer-events: none; box-shadow: 0 0 0 2px var(--surface);
+}
+.w-panel, .w-menu {
+  position: absolute; top: 42px; right: 0; z-index: 60; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 12px; box-shadow: var(--shadow-2); animation: fade 0.12s ease-out;
+}
+.w-panel { width: min(380px, calc(100vw - 24px)); display: flex; flex-direction: column; max-height: min(70vh, 560px); }
+.w-panel-h { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 12px 8px; border-bottom: 1px solid var(--line); }
+.w-panel-b { overflow-y: auto; padding: 4px; }
+.w-note {
+  display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 8px; width: 100%; text-align: left; border: 0; background: none;
+  padding: 9px 8px; border-radius: 9px; cursor: pointer; color: var(--ink); position: relative;
+}
+.w-note:hover { background: var(--surface-2); }
+.w-note.unread { background: var(--accent-soft); }
+.w-note.unread:hover { background: var(--accent-soft); filter: brightness(0.98); }
+.w-note-i { width: 28px; height: 28px; border-radius: 8px; background: var(--surface-3); display: grid; place-items: center; color: var(--ink-2); }
+.w-note-t { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.w-note-title { font-weight: 600; font-size: 13px; line-height: 1.35; }
+.w-note-body { font-size: 12.5px; color: var(--ink-2); line-height: 1.4; }
+.w-note-time { font-size: 11px; color: var(--ink-3); }
+
+.w-avatar-btn { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 3px 10px 3px 3px; cursor: pointer; height: 34px; }
+.w-avatar-btn:hover { background: var(--surface-3); }
+.w-avatar { width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font-weight: 700; font-size: 12.5px; }
+.w-plan { font-size: 12.5px; font-weight: 600; color: var(--ink-2); white-space: nowrap; }
+.w-menu { width: 260px; padding: 6px; }
+/* The top bar is full on laptop screens; the plan name is in the menu and the banners. */
+@media (max-width: 1499px) {
+  .w-avatar-btn .w-plan { display: none; }
+  .w-avatar-btn { padding: 3px; }
+}
+.w-menu-h { padding: 8px 10px 10px; border-bottom: 1px solid var(--line); margin-bottom: 4px; min-width: 0; }
+
+.w-banners { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+.w-banner {
+  display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-radius: 10px; background: var(--surface);
+  border: 1px solid var(--line); font-size: 13px; color: var(--ink); flex-wrap: wrap;
+}
+.w-banner > svg { flex: none; color: var(--accent); }
+.w-banner-t { flex: 1 1 260px; min-width: 0; line-height: 1.45; }
+.w-banner.accent { background: var(--accent-soft); border-color: var(--accent-line); }
+.w-banner.good { background: var(--good-soft); border-color: transparent; }
+.w-banner.good > svg { color: var(--good-ink); }
+.w-banner.warn { background: var(--warn-soft); border-color: transparent; }
+.w-banner.warn > svg { color: var(--warn-ink); }
+.w-banner a { color: var(--accent); }
+
+.w-paywall { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; padding: 28px 16px; max-width: 520px; margin: 0 auto; }
+.w-paywall h2 { margin: 0; font-size: 18px; font-stretch: 106%; }
+.w-paywall ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; text-align: left; }
+.w-paywall li { display: flex; gap: 8px; align-items: flex-start; font-size: 13.5px; color: var(--ink-2); }
+.w-paywall li svg { color: var(--good-ink); margin-top: 3px; flex: none; }
+.w-paywall-icon { width: 44px; height: 44px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; }
+
+.w-teaser { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink-2); padding: 8px 12px; border: 1px dashed var(--line-2); border-radius: 10px; flex-wrap: wrap; }
+.w-teaser > svg { color: var(--accent); }
+
+.w-plan-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.w-plan-card { border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 8px; background: var(--surface); }
+.w-plan-card.featured { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.w-plan-name { font-weight: 650; font-size: 16px; font-stretch: 106%; }
+.w-plan-price { font-size: 26px; font-weight: 700; letter-spacing: -0.01em; font-stretch: 104%; }
+.w-plan-feats { list-style: none; margin: 4px 0 6px; padding: 0; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.w-plan-feats li { display: flex; gap: 7px; align-items: flex-start; font-size: 13px; color: var(--ink-2); }
+.w-plan-feats li svg { color: var(--good-ink); margin-top: 2px; flex: none; }
+.w-plan-now { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--line); flex-wrap: wrap; }
+
+.w-rule { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 10px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--line); }
+.w-rule:last-child { border-bottom: 0; }
+.w-invite { display: flex; gap: 12px; align-items: flex-start; padding: 14px; border-radius: 12px; background: var(--accent-soft); }
+.w-invite > svg { color: var(--accent); flex: none; }
+.w-reply { margin-top: 8px; padding: 8px 10px; border-radius: 8px; background: var(--surface); border-left: 3px solid var(--accent); white-space: pre-wrap; }
+.w-json { margin: 0; padding: 12px; border-radius: 9px; background: var(--surface-2); border: 1px solid var(--line); font-family: var(--font-mono); font-size: 12px; line-height: 1.5; overflow: auto; max-height: 60vh; white-space: pre-wrap; word-break: break-word; }
+.w-status { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; }
+.w-kpi-warn { border-color: var(--warn); }
+.w-kpi-good { border-color: var(--good); }
+
+/* Sign in */
+.w-auth { min-height: 100vh; display: grid; place-items: center; padding: 24px 16px; background: var(--bg); }
+.w-auth-card { width: min(420px, 100%); background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow-1); padding: 28px 26px 22px; display: flex; flex-direction: column; gap: 14px; }
+.w-auth-card h1 { margin: 4px 0 0; font-size: 20px; font-stretch: 106%; line-height: 1.25; }
+.w-auth-card p { margin: 0; }
+.w-auth-brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 700; letter-spacing: 0.02em; }
+.w-google { gap: 10px; height: 40px; }
+.w-or { display: flex; align-items: center; gap: 10px; color: var(--ink-3); font-size: 12px; }
+.w-or::before, .w-or::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.w-code { font-family: var(--font-mono); font-size: 22px; letter-spacing: 8px; text-align: center; height: 48px; }
+.w-auth-foot { display: flex; flex-direction: column; gap: 8px; align-items: center; margin-top: 4px; padding-top: 12px; border-top: 1px solid var(--line); }
+.w-auth-foot a { color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; }
+.w-auth-foot a:hover { text-decoration: underline; }
+
+.w-splash { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: var(--bg); padding: 24px; text-align: center; }
+
+.w-admin .content { max-width: 1400px; }
+.w-admin .topbar .strong { font-size: 15px; }
