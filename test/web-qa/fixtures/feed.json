@@ -1,0 +1,469 @@
+{
+ "v": 1,
+ "builtAt": "2026-10-22T12:31:42Z",
+ "market": {
+  "asOf": "2026-10-22",
+  "fx": {
+   "PKR": 1,
+   "USD": 276.8522,
+   "AED": 75.3853,
+   "SAR": 73.8272,
+   "EUR": 310.8503,
+   "GBP": 370.3119
+  },
+  "fxDate": "2026-10-22",
+  "goldTola": 440636,
+  "silverTola": 6256,
+  "goldUsdOz": 4120.33,
+  "goldDate": "2026-10-17",
+  "policyRate": 11.5,
+  "policyDate": "2026-09-14",
+  "cpi": 10.26,
+  "cpiMonth": "Sep 2026",
+  "coreCpi": 8.6,
+  "tbill": {
+   "m1": 11.5003,
+   "m3": 11.9999,
+   "m6": 12.3989,
+   "m12": 12.4999,
+   "date": "2026-10-14"
+  },
+  "nss": {
+   "BSC": 12.96,
+   "PBA": 12.96,
+   "SSC": 11.82,
+   "DSC": 11.8,
+   "RIC": 12.12,
+   "STSC": 11.31,
+   "SITA3": 11.57,
+   "SITA5": 11.7,
+   "SISA": 11.84,
+   "SHUHADA": 12.96,
+   "PRIZE": 0
+  },
+  "nssDate": "2026-10-21",
+  "npcUsd": 7.25,
+  "btcUsd": 82688,
+  "btcDate": "2026-10-21",
+  "fedFunds": 3.88,
+  "ust10y": 5.13,
+  "kse100": 163924.31,
+  "kse100Date": "2026-10-22",
+  "kse100Ytd": -5.8,
+  "kse100Ath": 189167
+ },
+ "dates": {
+  "fx": "2026-10-22",
+  "goldTola": "2026-10-17",
+  "silverTola": "2026-10-17",
+  "goldUsdOz": "2026-10-21",
+  "policyRate": "2026-10-22",
+  "cpi": "2026-09",
+  "coreCpi": "2026-09",
+  "tbill": "2026-10-14",
+  "npcUsd": "2026-10-19",
+  "btcUsd": "2026-10-21",
+  "fedFunds": "2026-10-20",
+  "ust10y": "2026-10-21",
+  "nss.BSC": "2026-10-21",
+  "nss.PBA": "2026-10-21",
+  "nss.SSC": "2026-10-01",
+  "nss.DSC": "2026-10-01",
+  "nss.RIC": "2026-10-21",
+  "nss.STSC": "2026-10-01",
+  "nss.SITA3": "2026-10-01",
+  "nss.SITA5": "2026-10-01",
+  "nss.SISA": "2026-10-21",
+  "nss.SHUHADA": "2026-10-21",
+  "nss.PRIZE": "2026-10-01",
+  "kse100": "2026-10-22",
+  "kse100Ytd": "2026-10-22",
+  "kse100Ath": "2026-10-22"
+ },
+ "sources": {
+  "seed": "Arzish built-in snapshot of 21 Oct 2026",
+  "policyRate": "sbp",
+  "tbill": "sbp",
+  "fx": "sbp",
+  "goldUsdOz": "fx",
+  "btcUsd": "fx",
+  "nss": "cdns",
+  "cpi": "pbs",
+  "ust10y": "treasury",
+  "fedFunds": "nyfed",
+  "kse100": "psx",
+  "kse100Ytd": "psx",
+  "kse100Ath": "psx"
+ },
+ "sourceInfo": {
+  "sbp": {
+   "label": "State Bank of Pakistan",
+   "url": "https://www.sbp.org.pk/"
+  },
+  "sbp_open": {
+   "label": "SBP: open-market closing rates",
+   "url": "https://www.sbp.org.pk/"
+  },
+  "psx": {
+   "label": "PSX Data Portal (read with psxdata)",
+   "url": "https://dps.psx.com.pk/"
+  },
+  "funds": {
+   "label": "MUFAP NAVs via the open pakistan-mutual-funds-data set",
+   "url": "https://github.com/saadsalmankhan/pakistan-mutual-funds-data"
+  },
+  "mufap": {
+   "label": "MUFAP",
+   "url": "https://www.mufap.com.pk/Industry/IndustryStatDaily?tab=3"
+  },
+  "cdns": {
+   "label": "National Savings (CDNS)",
+   "url": "https://savings.gov.pk/latest-profit-rates/"
+  },
+  "fx": {
+   "label": "fawazahmed0/exchange-api (CC0)",
+   "url": "https://github.com/fawazahmed0/exchange-api"
+  },
+  "pbs": {
+   "label": "Pakistan Bureau of Statistics",
+   "url": "https://www.pbs.gov.pk/"
+  },
+  "treasury": {
+   "label": "US Treasury",
+   "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+  },
+  "nyfed": {
+   "label": "Federal Reserve Bank of New York",
+   "url": "https://www.newyorkfed.org/markets/reference-rates/effr"
+  },
+  "bls": {
+   "label": "US Bureau of Labor Statistics",
+   "url": "https://data.bls.gov/timeseries/CUUR0000SA0"
+  }
+ },
+ "extra": {
+  "kibor": {
+   "m3": {
+    "bid": 11.76,
+    "offer": 12.01
+   },
+   "m6": {
+    "bid": 12.18,
+    "offer": 12.43
+   },
+   "m12": {
+    "bid": 12.26,
+    "offer": 12.76
+   },
+   "asOf": "2026-10-22"
+  },
+  "reserves": {
+   "sbp": 21469.5,
+   "banks": 5393.8,
+   "total": 26863.3,
+   "asOf": "2026-10-09"
+  },
+  "overnightRepo": {
+   "v": 11.08,
+   "asOf": "2026-10-21"
+  },
+  "usdM2M": {
+   "v": 276.8522,
+   "asOf": "2026-10-22"
+  },
+  "usdWA": {
+   "bid": 276.545,
+   "offer": 277.0018,
+   "asOf": "2026-10-22"
+  },
+  "ceiling": 12.5,
+  "floor": 10.5,
+  "fxAll": {
+   "asOf": "2026-10-21",
+   "rates": {
+    "USD": 276.8522,
+    "AED": 75.3853,
+    "SAR": 73.8272,
+    "EUR": 310.8503,
+    "GBP": 370.3119,
+    "QAR": 76.0583,
+    "KWD": 893.6747,
+    "OMR": 719.4233,
+    "BHD": 736.309,
+    "CAD": 196.8814,
+    "AUD": 194.1577,
+    "CNY": 41.4529,
+    "JPY": 1.7515,
+    "CHF": 335.4128,
+    "MYR": 67.827,
+    "TRY": 5.5824,
+    "SGD": 216.6694,
+    "INR": 2.9271
+   }
+  },
+  "metals": {
+   "asOf": "2026-10-21",
+   "goldUsdOz": 4120.33,
+   "goldTolaSpotPkr": 427077,
+   "silverUsdOz": 57.387,
+   "silverTolaSpotPkr": 5948
+  },
+  "crypto": {
+   "asOf": "2026-10-21",
+   "usd": {
+    "BTC": 82688.22,
+    "ETH": 2441.86,
+    "USDT": 0.99882,
+    "USDC": 0.999753,
+    "BNB": 740.36,
+    "SOL": 105.78,
+    "XRP": 1.3315,
+    "DOGE": 0.081471,
+    "ADA": 0.222983,
+    "TRX": 0.331004,
+    "DOT": 1.1636,
+    "LTC": 61.4257,
+    "LINK": 12.3267,
+    "AVAX": 9.7008,
+    "SHIB": 5.12e-06,
+    "BCH": 284.45,
+    "XLM": 0.181454,
+    "POL": 0.094974,
+    "SUI": 1.0259,
+    "PEPE": 4.5e-06
+   }
+  },
+  "cdns": {
+   "effective": "2026-10-21",
+   "parsed": {
+    "RIC": 12.12,
+    "BEHBOOD": 12.96,
+    "SAVING_ACCOUNT": 10.0,
+    "SISA": 11.84,
+    "STSC_RANGE": [
+     11.12,
+     11.72
+    ],
+    "SSC_RANGE": [
+     12.0,
+     12.8
+    ],
+    "SITA_RANGE": [
+     11.84,
+     12.12
+    ],
+    "DSC_RANGE": [
+     10.0,
+     215.0
+    ]
+   },
+   "banner": "NSS_Profit_Rates_w.e.f. 21-OCT-2026, Special Savings (12%-12.8% / Rs.6,000-Rs.6,400 per 100k), Defence Savings (10%-215% over 10 years), Regular Income (12.12% / Rs.1,010 per 100k), Behbood/Pensioner/Shuhada (12.96% / Rs.1,080 per 100k), Short-Term (11.12%-11.72% / Rs.2,780-Rs.11,720 per 100k), Saving Account (10%), Sarwa Term (11.84%-12.12% / Rs.1,010-Rs.11,840 per 100k), and Sarwa Saving (11.84% / Rs.973.15 per 100k) are subject to 15% Filer WHT, 30% Non-Filer WHT, and 2.5% Zakat where applicable.\nLatest Profit Rates\nSummary of NSS Profit Rates (in %age and amount) , w.e.f. 21-Oct-2026\n,\nNote : There is no change in Savings Account (SA) Profit and remains at 10.00% p.a.\nCertificates\nDSC\nDefense Saving Certificate Historical Profit Rates\nClick to Download Profit History\nBSC\nBehbood Savings Certificate Historical Profit Rates\nClick to Download\nRIC\nRegular Income Certificate Historical Profit Rates\nClick to Download\nSSC\nSpecial Savings Certificate (Registered) Historical Profit Rates\nClick to Download Historical\nRates\nClick here to Download Compound Rates 2025\nSTSC\nClick to open\nAccounts\nSA\nSavings Account Historical Profit Rates\nClick to Download\nPBA\nPensioners Benefit Account Historical Profit Rates\nClick to Download\nSSA\nSpecial Savings Account Historical Profit Rates\nClick to Download\nClick to Download Compound Rate 2025\nSFWA\nShuhada Family Welfare Account Historical Profit Rates\nClick to Download\nSISA\nClick to Download\nSITA\nClick to Download\nThe Official Web Gateway to Pakistan\nFinance Division Government of Pakistan\nFBR Federal Board of Revenue - Government o",
+   "files": [
+    {
+     "url": "https://savings.gov.pk/wp-content/uploads/2026/10/DSC_211026_update.pdf",
+     "path": "raw/cdns/files/DSC_211026_update.pdf",
+     "sha1": "3a77fe84411d"
+    },
+    {
+     "url": "https://savings.gov.pk/wp-content/uploads/2026/10/BSC-PBA-SFWA_211026.pdf",
+     "path": "raw/cdns/files/BSC-PBA-SFWA_211026.pdf",
+     "sha1": "06c30c8d30b8"
+    },
+    {
+     "url": "https://savings.gov.pk/wp-content/uploads/2026/10/RIC_211026.pdf",
+     "path": "raw/cdns/files/RIC_211026.pdf",
+     "sha1": "e0e572332866"
+    },
+    {
+     "url": "https://savings.gov.pk/wp-content/uploads/2026/10/SSC-SSA.pdf",
+     "path": "raw/cdns/files/SSC-SSA.pdf",
+     "sha1": "66313dfec5a5"
+    },
+    {
+     "url": "https://savings.gov.pk/wp-content/uploads/2026/10/STSC_21Oct2026.pdf",
+     "path": "raw/cdns/files/STSC_21Oct2026.pdf",
+     "sha1": "94b0b03cd7f6"
+    },
+    {
+     "url": "https://savings.gov.pk/wp-content/uploads/2026/10/SavingAccount_wef01X26.pdf",
+     "path": "raw/cdns/files/SavingAccount_wef01X26.pdf",
+     "sha1": "d4d7c33c1118"
+    },
+    {
+     "url": "https://savings.gov.pk/wp-content/uploads/2026/10/SISA_211026.pdf",
+     "path": "raw/cdns/files/SISA_211026.pdf",
+     "sha1": "8e376f9e2b77"
+    },
+    {
+     "url": "https://savings.gov.pk/wp-content/uploads/2026/10/SITA_211026.pdf",
+     "path": "raw/cdns/files/SITA_211026.pdf",
+     "sha1": "b33ed6bf6ef5"
+    },
+    {
+     "url": "https://savings.gov.pk/wp-content/uploads/2026/10/Profit_wef_211026.jpeg",
+     "path": "raw/cdns/files/Profit_wef_211026.jpeg",
+     "sha1": "2818b4cc2faf"
+    },
+    {
+     "url": "https://savings.gov.pk/wp-content/uploads/2026/10/Profit_wef_211026-768x1225.jpeg",
+     "path": "raw/cdns/files/Profit_wef_211026-768x1225.jpeg",
+     "sha1": "27f05ac5d9b2"
+    }
+   ]
+  },
+  "usTreasury": {
+   "asOf": "2026-10-21",
+   "m3": 4.25,
+   "y1": 4.52,
+   "y2": 4.81,
+   "y5": 4.95,
+   "y10": 5.13,
+   "y30": 5.42
+  },
+  "usCpi": {
+   "yoy": 3.74,
+   "month": "2026-09"
+  },
+  "pib": {
+   "y2": 12.399,
+   "y3": 12.49,
+   "y5": 12.49,
+   "y10": 12.5,
+   "asOf": "2026-09-18"
+  },
+  "openMarket": {
+   "rates": {
+    "USD": {
+     "buy": 277.52,
+     "sell": 278.61
+    },
+    "EUR": {
+     "buy": 310.9,
+     "sell": 313.79
+    },
+    "GBP": {
+     "buy": 370.63,
+     "sell": 373.9
+    },
+    "AED": {
+     "buy": 75.58,
+     "sell": 76.18
+    },
+    "SAR": {
+     "buy": 73.92,
+     "sell": 74.49
+    },
+    "JPY": {
+     "buy": 1.74,
+     "sell": 1.8
+    }
+   },
+   "asOf": "2026-10-21",
+   "url": "https://www.sbp.org.pk/assets/document/Open_Market_Closing_Exchange_Rates_21-October-2026.pdf"
+  },
+  "psx": {
+   "asOf": "2026-10-22",
+   "time": "17:30",
+   "state": "Closed",
+   "intraday": false,
+   "breadth": {
+    "advance": 100,
+    "decline": 355,
+    "unchanged": 38
+   },
+   "indices": {
+    "KSE100": {
+     "v": 163924.31,
+     "high": 166180.32,
+     "low": 163782.41,
+     "chg": -2006.67,
+     "chgPct": -1.21
+    },
+    "ALLSHR": {
+     "v": 99526.87,
+     "high": 100809.73,
+     "low": 99502.93,
+     "chg": -1083.61,
+     "chgPct": -1.08
+    },
+    "KSE30": {
+     "v": 48313.8,
+     "high": 49023.81,
+     "low": 48258.45,
+     "chg": -750.08,
+     "chgPct": -1.53
+    },
+    "KMI30": {
+     "v": 235637.18,
+     "high": 238944.26,
+     "low": 235242.68,
+     "chg": -3247.37,
+     "chgPct": -1.36
+    },
+    "KMIALLSHR": {
+     "v": 64683.08,
+     "high": 65397.86,
+     "low": 64606.88,
+     "chg": -587.3,
+     "chgPct": -0.9
+    }
+   },
+   "kse": {
+    "ytdBase": {
+     "date": "2025-12-31",
+     "v": 174054.32
+    },
+    "ath": {
+     "date": "2026-01-23",
+     "v": 189166.83
+    }
+   },
+   "count": 756
+  }
+ },
+ "status": {
+  "sbp": {
+   "ok": true,
+   "at": "2026-10-22T12:30:26Z"
+  },
+  "sbp_open": {
+   "ok": true,
+   "at": "2026-10-22T12:30:45Z"
+  },
+  "psx": {
+   "ok": true,
+   "at": "2026-10-22T12:31:08Z"
+  },
+  "funds": {
+   "ok": true,
+   "at": "2026-10-22T12:31:12Z"
+  },
+  "cdns": {
+   "ok": true,
+   "at": "2026-10-22T12:31:20Z"
+  },
+  "fx": {
+   "ok": true,
+   "at": "2026-10-22T12:31:20Z"
+  },
+  "pbs": {
+   "ok": true,
+   "at": "2026-10-22T12:31:23Z"
+  },
+  "treasury": {
+   "ok": true,
+   "at": "2026-10-22T12:31:41Z"
+  },
+  "nyfed": {
+   "ok": true,
+   "at": "2026-10-22T12:31:42Z"
+  },
+  "bls": {
+   "ok": true,
+   "at": "2026-10-22T12:31:42Z"
+  }
+ },
+ "review": [
+  "goldTola/silverTola: set from the Sarafa association rate reported today; else spot-based from extra.metals"
+ ]
+}
